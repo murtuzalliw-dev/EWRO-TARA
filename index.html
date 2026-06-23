@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Оптовая продажа деревянных поддонов в Москве и МО | Евро Тара</title>
+
+<meta name="description" content="ООО «Евро Тара» — оптовая продажа бывших в употреблении деревянных поддонов в Москве и Московской области. Доставка, самовывоз, вывоз, контроль качества.">
+
+<meta name="theme-color" content="#f7c600">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--yellow:#f7c600;
+--yellow-dark:#ddb000;
+--black:#1d1d1d;
+--gray:#666;
+--light:#f5f5f5;
+--white:#ffffff;
+--radius:18px;
+--shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+color:var(--black);
+background:#fff;
+line-height:1.6;
+}
+
+.container{
+width:min(1180px,92%);
+margin:auto;
+}
+
+section{
+padding:80px 0;
+}
+
+h1{
+font-size:clamp(32px,5vw,64px);
+line-height:1.1;
+margin-bottom:20px;
+}
+
+h2{
+font-size:clamp(28px,4vw,42px);
+margin-bottom:20px;
+}
+
+h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+p{
+color:var(--gray);
+}
+
+.btn{
+display:inline-block;
+padding:15px 28px;
+border-radius:12px;
+font-weight:700;
+text-decoration:none;
+transition:.3s;
+cursor:pointer;
+}
+
+.btn-primary{
+background:var(--yellow);
+color:#000;
+}
+
+.btn-primary:hover{
+background:var(--yellow-dark);
+}
+
+.btn-outline{
+border:2px solid var(--yellow);
+color:#000;
+}
+
+.btn-outline:hover{
+background:var(--yellow);
+}
+
+.header{
+position:sticky;
+top:0;
+background:#fff;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px 0;
+}
+
+.logo{
+font-weight:800;
+font-size:24px;
+}
+
+.logo span{
+color:var(--yellow-dark);
+}
+
+.hero{
+background:
+linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.95)),
+url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+padding:110px 0;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:40px;
+}
+
+.features-top{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.feature-top{
+background:#fff;
+padding:20px;
+border-radius:14px;
+box-shadow:var(--shadow);
+font-weight:600;
+}
+
+.about{
+background:var(--light);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+}
+
+.card-icon{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.conditions{
+text-align:center;
+}
+
+.highlight{
+background:#fff8d8;
+border-left:5px solid var(--yellow);
+padding:25px;
+border-radius:12px;
+margin-top:25px;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.step{
+background:#fff;
+padding:30px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+position:relative;
+}
+
+.step-number{
+width:50px;
+height:50px;
+background:var(--yellow);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:800;
+margin-bottom:15px;
+}
+
+.contact-wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.form-box,
+.contact-box{
+background:#fff;
+padding:35px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:14px;
+border:1px solid #ddd;
+border-radius:10px;
+font-family:inherit;
+}
+
+textarea{
+min-height:120px;
+resize:vertical;
+}
+
+.contact-list{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:15px;
+}
+
+.contact-list a{
+text-decoration:none;
+color:#000;
+font-weight:600;
+}
+
+.messenger-buttons{
+display:flex;
+gap:10px;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
+.map{
+margin-top:30px;
+border-radius:18px;
+overflow:hidden;
+box-shadow:var(--shadow);
+}
+
+.faq{
+background:var(--light);
+}
+
+details{
+background:#fff;
+padding:20px;
+margin-bottom:15px;
+border-radius:12px;
+box-shadow:var(--shadow);
+}
+
+summary{
+cursor:pointer;
+font-weight:700;
+}
+
+footer{
+background:#111;
+color:#fff;
+padding:35px 0;
+text-align:center;
+}
+
+footer p{
+color:#ccc;
+}
+
+@media(max-width:900px){
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+.hero-buttons{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="container nav">
+<div class="logo">ЕВРО <span>ТАРА</span></div>
+<a href="#form" class="btn btn-primary">Оставить заявку</a>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+
+<div class="hero-content">
+
+<h1>Оптовая продажа деревянных поддонов в Москве и МО</h1>
+
+<p>
+Качественные б/у паллеты с доставкой, самовывозом и вывозом.
+Работаем только оптом от 300 штук.
+</p>
+
+<div class="hero-buttons">
+
+<a href="tel:+79634225559" class="btn btn-primary">
+Позвонить
+</a>
+
+<a href="mailto:evro_tara@bk.ru" class="btn btn-outline">
+Написать на почту
+</a>
+
+<a href="#form" class="btn btn-primary">
+Оставить заявку
+</a>
+
+</div>
+
+<div class="features-top">
+
+<div class="feature-top">
+✓ Работаем только с оптом
+</div>
+
+<div class="feature-top">
+✓ Собственная логистика
+</div>
+
+<div class="feature-top">
+✓ Контроль качества
+</div>
+
+<div class="feature-top">
+✓ Круглосуточная доставка
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="about">
+<div class="container">
+
+<h2>О компании</h2>
+
+<p style="max-width:900px;margin-bottom:40px;">
+Компания ООО «ЕВРО - ТАРА» несколько лет успешно работает на российском рынке
+и осуществляет деятельность по продаже бывших в употреблении поддонов.
+Благодаря собственной логистике, большим складским помещениям и высококвалифицированному персоналу,
+мы гарантированно обеспечиваем своевременную доставку и высокое качество продукции.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-icon">✔</div>
+<h3>Контроль качества</h3>
+<p>Проверка каждой партии перед отгрузкой.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">⚡</div>
+<h3>Быстрая доставка</h3>
+<p>Погрузка и доставка в течение дня.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🤝</div>
+<h3>Постоянным клиентам</h3>
+<p>Сокращенные сроки поставки.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🚚</div>
+<h3>Круглосуточно</h3>
+<p>Работаем без ограничений по времени.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">🔄</div>
+<h3>Гарантия возврата</h3>
+<p>Замена или возврат бракованных поддонов.</p>
+</div>
+
+<div class="card">
+<div class="card-icon">📦</div>
+<h3>Крупные объемы</h3>
+<p>Поставки от 300 поддонов.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="conditions">
+<div class="container">
+
+<h2>Условия работы</h2>
+
+<p>
+Работаем исключительно с оптовыми заказами.
+</p>
+
+<div class="highlight">
+
+<p><strong>Минимальный объем партии:</strong> от 300 поддонов</p>
+
+<p><strong>Доставка:</strong> Москва и Московская область</p>
+
+<p><strong>Самовывоз:</strong> доступен со складов компании</p>
+
+<p><strong>Стоимость:</strong> рассчитывается индивидуально</p>
+
+<p>
+Цена зависит от сорта, размеров, объема заказа и условий поставки.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2>Как мы работаем</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Заявка</h3>
+<p>Вы звоните или отправляете заявку.</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>Уточнение</h3>
+<p>Согласовываем объем, сорт и размеры поддонов.</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Логистика</h3>
+<p>Определяем доставку, самовывоз или выезд транспорта.</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Отгрузка</h3>
+<p>Формируем и доставляем партию в согласованные сроки.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="form">
+<div class="container">
+
+<h2>Оставьте заявку</h2>
+
+<div class="contact-wrapper">
+
+<div class="form-box">
+
+<form>
+
+<input type="text" placeholder="Ваше имя">
+
+<input type="tel" placeholder="Телефон">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Необходимый объем">
+
+<textarea placeholder="Комментарий"></textarea>
+
+<button type="submit" class="btn btn-primary">
+Отправить заявку
+</button>
+
+</form>
+
+</div>
+
+<div class="contact-box">
+
+<h3>Контакты</h3>
+
+<div class="contact-list">
+
+<a href="tel:+79634225559">
+📞 8 (963) 422-55-59
+</a>
+
+<a href="tel:+79850587717">
+📞 8 (985) 058-77-17
+</a>
+
+<a href="mailto:evro_tara@bk.ru">
+✉ evro_tara@bk.ru
+</a>
+
+<div>
+📍 МО, Чехов, Новоселки,
+Родниковая улица, 31
+</div>
+
+<div>
+📍 Городской округ Домодедово,
+Каширское шоссе, 55
+</div>
+
+</div>
+
+<div class="messenger-buttons">
+
+<a class="btn btn-primary" href="#">
+WhatsApp
+</a>
+
+<a class="btn btn-outline" href="#">
+Telegram
+</a>
+
+<a class="btn btn-primary" href="tel:+79634225559">
+Обратный звонок
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="map">
+
+<iframe
+src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c9d1e7e78f9a4e4c1a53f0a88f7e0f2b8e58f2f7a3b9f1e5d5b4e6c8d7a6b5c&amp;source=constructor"
+width="100%"
+height="450"
+frameborder="0">
+</iframe>
+
+</div>
+
+</div>
+</section>
+
+<section class="faq">
+<div class="container">
+
+<h2>Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Какие поддоны вы продаете?</summary>
+<p>Бывшие в употреблении деревянные поддоны различных размеров и сортов.</p>
+</details>
+
+<details>
+<summary>Какой минимальный объем заказа?</summary>
+<p>Минимальная партия составляет 300 поддонов.</p>
+</details>
+
+<details>
+<summary>Есть ли доставка и самовывоз?</summary>
+<p>Да. Доступны доставка по Москве и МО, а также самовывоз.</p>
+</details>
+
+<details>
+<summary>Как формируется цена?</summary>
+<p>Стоимость зависит от объема, сорта, размеров и условий поставки.</p>
+</details>
+
+<details>
+<summary>Работаете ли вы только с оптом?</summary>
+<p>Да. Компания специализируется исключительно на оптовых поставках.</p>
+</details>
+
+</div>
+</section>
+
+<footer>
+
+<div class="container">
+
+<h3>ООО «ЕВРО - ТАРА»</h3>
+
+<p>
+Оптовая продажа деревянных поддонов в Москве и Московской области
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
